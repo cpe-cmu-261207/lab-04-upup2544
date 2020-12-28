@@ -108,6 +108,7 @@ function App() {
         <form onSubmit ={
           e => addCourse(e)}>
             <td>
+           Credit :
         <select className = "bg-blue-100 rounded-3xl p-1  hover:bg-red-200" onChange = { e => 
             setInputData({...inputData,crd: e.currentTarget.value}) 
           }>
@@ -117,6 +118,7 @@ function App() {
         </select>     
           </td>
           <td>
+           Grade :
           <select className = "bg-blue-100 rounded-3xl p-1  hover:bg-red-200" onChange = { e => 
            setInputData({...inputData,grd: e.currentTarget.value}) 
           }>
@@ -126,6 +128,7 @@ function App() {
         </select>    
           </td>
           <td>
+          ID :
           <input className = "bg-blue-100 rounded-3xl p-1  hover:bg-red-200" type="text" onChange = { e => 
             setInputData({...inputData,name: e.currentTarget.value}) 
           }/>
